@@ -1,0 +1,19 @@
+#Using Unicodes: 
+
+print("\U0001f600")
+ print("\U0001F606")
+ print("\U0001F923")
+
+#Using CLDR short name:
+
+print("\N{grinning face}")
+ print("\N{slightly smiling face}")
+ print("\N{winking face}")
+ 
+ #Using emoji module
+ 
+ import emoji
+print(emoji.emojize(":grinning_face_with_big_eyes:"))
+print(emoji.emojize(":winking_face_with_tongue:"))
+print(emoji.emojize(":zipper-mouth_face:"))
+
