@@ -1,0 +1,32 @@
+def banner_text(text):
+    screen_size = 80
+    if len(text) > screen_size - 4:
+        print("Too long")
+    if text == "*":
+        print("*" * screen_size)
+    else:
+        centred_text = text.center(screen_size - 4)
+        output_text = "**{0}**".format(centred_text)
+        print(output_text)
+
+banner_text ("*")
+banner_text ("The Zen of Python")
+banner_text("Beautiful is better than ugly.")
+banner_text("Explicit is better than implicit.")
+banner_text("Simple is better than complex.")
+banner_text("Complex is better than complicated.")
+banner_text("Sparse is better than dense.")
+banner_text("Readability counts.")
+banner_text("Special cases aren't special enough to break the rules.")
+banner_text("Although practicality beats purity.")
+banner_text("Errors should never pass silently.")
+banner_text("Unless explicitly silenced.")
+banner_text("In the face of ambiguity, refuse the temptation to guess.")
+banner_text("There should be one-- and preferably only one --obvious way to do it.")
+banner_text("Although that way may not be obvious at first unless you're Dutch.")
+banner_text("Now is better than never.")
+banner_text("Although never is often better than *right* now.")
+banner_text("If the implementation is hard to explain, it's a bad idea.")
+banner_text("If the implementation is easy to explain, it may be a good idea.")
+banner_text("Namespaces are one honking great idea -- let's do more of those!")
+banner_text("*")
