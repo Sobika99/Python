@@ -1,0 +1,8 @@
+person_details = {
+        'name': 'sobika',
+        'age': '23',
+        'Education':'B.E',
+}
+print(person_details)
+for key, values in person_details.items():
+    print(key,values)
