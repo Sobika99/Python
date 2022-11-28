@@ -1,0 +1,8 @@
+days= { 'Mon', 'Tue', 'Wed','Thu'}
+enum_days = enumerate(days)
+# enumearte using loop
+for enum_days in enumerate(days):
+   print(enum_days)
+
+for count,enum_days in enumerate(days,5):
+   print(count,enum_days)
