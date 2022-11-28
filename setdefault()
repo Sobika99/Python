@@ -1,0 +1,14 @@
+fruits = {'Apple': 12, 'Orange': 10, 'Cherry':6}
+key = 'Orange'
+fruits[key] = fruits.setdefault(key, 0) + 1
+print("Updated Dictionary:", fruits)
+
+print(80 * "*")
+
+fruits = {'Apple': 12, 'Orange': 10, 'Cherry':6}
+key = 'Orange'
+if key in fruits:
+    fruits[key] += 1
+    print(f"Updated Dictionary: {fruits}")
+else:
+    print(f"already exits value: {fruits}")
