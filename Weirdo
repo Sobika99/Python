@@ -1,0 +1,10 @@
+number = int(input(""))
+if number % 2 != 0:
+    print("Weird")
+else:
+    if (number >= 2) and (number <= 6):
+        print("Not Weird")
+    if (number >= 6) and (number <= 20):
+        print("Weird")
+    if number > 20:
+        print("Not Weird")
