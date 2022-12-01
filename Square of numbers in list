@@ -1,0 +1,7 @@
+list1= []
+n = int(input())
+for i in range (n):
+    list1.append(i)
+for j in range(len(list1)):
+    square = j *j
+    print(square)
