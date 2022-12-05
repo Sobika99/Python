@@ -1,0 +1,17 @@
+import copy
+
+fruits = {1: ["strawberry"], 2: ['lemon']}
+fruits_new = {1: ["strawberry"], 2: ['lemon']}
+things = {}
+for key, value in fruits.items():
+    print(key, value)
+# Perform a shallow copy
+things = fruits.copy()
+print(things)
+things[2].append("wind")
+print(fruits)
+
+# perform a deepcopy
+things_new = copy.deepcopy(fruits)
+things_new[2].append("wind")
+print(fruits_new)
