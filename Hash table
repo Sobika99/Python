@@ -6,16 +6,38 @@ data = [
     ("melon", "sweet and juicy"),
 ]
 
-def simple_hash (s : str) -> int:
-    basic_hash = ord(s[0])
-    return basic_hash %10
+# print(ord("a"))
+# print(ord("b"))
+# print(ord("z"))
 
-keys = [""]*10
+
+def simple_hash(s: str) -> int:
+    """A ridiculously simple hashing function"""
+    basic_hash = ord(s[0])
+    return basic_hash % 10
+
+
+def get(k: str) -> str:
+    """Return the value for a key, or None if the key doesn't exist"""
+    hash_code = simple_hash(k)
+    if values[hash_code]:
+        return values[hash_code]
+    else:
+        return None
+
+
+keys = [""] * 10
 values = keys.copy()
 
-for key,value in data:
+for key, value in data:
     h = simple_hash(key)
-    print(h,key)
+    # h = hash(key)
+    print(key, h)
     keys[h] = key
     values[h] = value
-print(keys,values)
+
+print(keys)
+print(values)
+print()
+value = get("banana")
+print(value)
