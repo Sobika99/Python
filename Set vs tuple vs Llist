@@ -1,0 +1,20 @@
+farm_animals = {'cow', 'sheep', 'hen', 'goat', 'horse'}
+more_animals = {'sheep', 'goat', 'cow', 'horse', 'hen'}
+if more_animals == farm_animals:
+    print('The sets are equal')
+else:
+    print('The sets are different')
+
+farm_animals = ['cow', 'sheep', 'hen', 'goat', 'horse']
+more_animals = ['sheep', 'goat', 'cow', 'horse', 'hen']
+if more_animals == farm_animals:
+    print('The list are equal')
+else:
+    print('The list are different')
+
+farm_animals = 'cow', 'sheep', 'hen', 'goat', 'horse'
+more_animals = 'sheep', 'goat', 'cow', 'horse', 'hen'
+if more_animals == farm_animals:
+    print('The tuple are equal')
+else:
+    print('The tuple are different')
