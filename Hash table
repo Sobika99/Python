@@ -25,6 +25,13 @@ def get(k: str) -> str:
     else:
         return None
 
+def find_key(l : str) -> str:
+    """Return the key for a value, or None if the key doesn't exist"""
+    hash_key = simple_hash(l)
+    if keys[hash_key]:
+        return keys[hash_key]
+    else:
+        return None
 
 keys = [""] * 10
 values = keys.copy()
@@ -41,3 +48,6 @@ print(values)
 print()
 value = get("banana")
 print(value)
+
+keyfind = find_key('good for making cider')
+print(keyfind)
