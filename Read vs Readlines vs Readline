@@ -1,0 +1,16 @@
+with open('apj') as poem:
+    text = poem.read()
+print(text)
+print("*" *10)
+output : entire poem
+
+with open('apj') as poem:
+    text = poem.readline()
+print(text)
+print("*" *10)
+output : First line of text file
+
+with open('apj') as poem:
+    text = poem.readlines()
+print(text)
+output : entire poem in list
