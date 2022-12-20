@@ -3,6 +3,14 @@ for i in poem:
     print(i,end='')
 poem.close()
 
+
+or
+
+with open('apj','r') as newpoem:
+    for j in newpoem:
+        print(j.strip())
+        
+        
 *****************************************
 apj text file :
 
