@@ -1,0 +1,27 @@
+poem = open('apj','r')
+for i in poem:
+    print(i,end='')
+poem.close()
+
+*****************************************
+apj text file :
+
+POEMS BY Dr. A.P.J KALAM
+Our mission is water
+My mother called me Blue Nile
+I am also named by mother White Nile
+When we grew and grew we asked
+Oh mother, Oh mother
+Tell us, why did you name us Nile
+Our mothers said lovingly
+Oh our children
+You travel and travel
+Cross mountains, forests and valleys
+Thousands of miles, enriching nine countries
+you reach Khartoum
+you Blue and White Niles confluence with a mission
+God has commanded you to give a message
+you give a beautiful message
+When we rivers confluence
+Oh humanity why not your hearts confluence
+And you blossom with happiness.
