@@ -1,0 +1,16 @@
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
+
+x = abs(-7.25)
+
+print(x)
+
+
+x = pow(4, 3)
+
+print(x)
